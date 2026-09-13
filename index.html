@@ -18,28 +18,24 @@
 
   <!-- ===== Header ===== -->
   <style>
-  /* 统一清掉默认外边距，间距全部单独控制 */
   .header-name,
   .header-affiliation,
-  .header-contact,
-  .header-research {
+  .header-contact {
     margin: 0;
   }
 
   .header-name {
-    margin-bottom: 6px;   /* 姓名与单位之间 */
+    margin-bottom: 6px;   /* 姓名与下方块之间 */
+    line-height: 1.2;
   }
 
   .header-affiliation {
-    margin-bottom: 22px;  /* 单位与邮箱之间：最大 */
+    line-height: 1.6;     /* 单位与研究方向两行之间的行距 */
   }
 
   .header-contact {
-    margin-bottom: 16px;  /* 邮箱与研究方向之间：比上面小，但已拉松 */
-  }
-
-  .header-research {
-    line-height: 1.6;
+    margin-top: 20px;     /* 邮箱与上方块之间，拉松 */
+    line-height: 1.4;
   }
 </style>
 
@@ -47,7 +43,10 @@
   <div class="container">
     <h1 class="header-name">汤梓燊<span class="romanized">Zishen TANG</span></h1>
 
-    <p class="header-affiliation">Business School, Beijing Normal University</p >
+    <p class="header-affiliation">
+      Business School, Beijing Normal University<br>
+      研究方向：资本市场改革与监管、创业金融、公司金融
+    </p >
 
     <p class="header-contact">
       <a href=" "
@@ -55,8 +54,6 @@
         tangzishen0125@mail.bnu.edu.cn
       </a >
     </p >
-
-    <p class="header-research">研究方向：资本市场改革与监管、创业金融、公司金融</p >
   </div>
 </header>
 

@@ -17,46 +17,48 @@
 <body>
 
   <!-- ===== Header ===== -->
-  <header>
+  <style>
+  /* 统一清掉默认外边距，间距全部单独控制 */
+  .header-name,
+  .header-affiliation,
+  .header-contact,
+  .header-research {
+    margin: 0;
+  }
+
+  .header-name {
+    margin-bottom: 6px;   /* 姓名与单位之间 */
+  }
+
+  .header-affiliation {
+    margin-bottom: 22px;  /* 单位与邮箱之间：最大 */
+  }
+
+  .header-contact {
+    margin-bottom: 16px;  /* 邮箱与研究方向之间：比上面小，但已拉松 */
+  }
+
+  .header-research {
+    line-height: 1.6;
+  }
+</style>
+
+<header>
   <div class="container">
-    <h1 class="header-name">
-      汤梓燊<span class="romanized">Zishen TANG</span>
-    </h1>
+    <h1 class="header-name">汤梓燊<span class="romanized">Zishen TANG</span></h1>
+
     <p class="header-affiliation">Business School, Beijing Normal University</p >
+
     <p class="header-contact">
       <a href=" "
          aria-label="发送邮件至 tangzishen0125@mail.bnu.edu.cn">
         tangzishen0125@mail.bnu.edu.cn
       </a >
     </p >
-    <p class="header-research">
-      研究方向：资本市场改革与监管、创业金融、公司金融
-    </p >
+
+    <p class="header-research">研究方向：资本市场改革与监管、创业金融、公司金融</p >
   </div>
 </header>
-
-.header-name {
-  margin: 0 0 6px;      /* 姓名与单位之间 */
-  line-height: 1.2;
-}
-
-.header-affiliation {
-  margin: 0 0 4px;      /* 单位与邮箱之间 */
-  line-height: 1.4;
-}
-
-.header-contact {
-  margin: 0 0 14px;     /* 邮箱与研究方向的间距，重点加大这里 */
-  line-height: 1.4;
-}
-
-.header-research {
-  margin: 0;
-  line-height: 1.6;
-  /* 可选：让研究方向视觉上独立一点 */
-  color: #444;
-  font-size: 0.95em;
-}
 
   <!-- ===== Navigation ===== -->
   <nav id="main-nav" aria-label="页面导航">

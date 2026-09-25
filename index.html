@@ -37,6 +37,34 @@
     margin-top: 20px;     /* 邮箱与上方块之间，拉松 */
     line-height: 1.4;
   }
+
+  .header-bio {
+    margin: 0;
+    padding-top: 36px;
+    margin-left: 4em;
+    width: calc(100% - 4em);
+    max-width: 520px;
+    color: var(--muted);
+    font-size: 0.78em;
+    line-height: 1.92;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    text-align-last: left;
+  }
+
+  @media (max-width: 640px) {
+    .header-bio {
+      padding-top: 28px;
+      margin-left: 1.5em;
+      width: calc(100% - 1.5em);
+      max-width: none;
+      font-size: 0.78em;
+      line-height: 1.88;
+      text-align: justify;
+      text-justify: inter-ideograph;
+      text-align-last: left;
+    }
+  }
 </style>
 
 <header>

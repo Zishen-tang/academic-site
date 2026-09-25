@@ -164,7 +164,6 @@ section h3:first-of-type {
   column-gap: 24px;
   align-items: start;
   margin-bottom: 28px;
-  font-size: 0.94em;
   line-height: 1.75;
 }
 
@@ -174,13 +173,13 @@ section h3:first-of-type {
 
 .education-date {
   color: var(--muted);
-  font-size: 1em;
+  font-size: 0.94em;
   line-height: 1.75;
   white-space: nowrap;
 }
 
 .education-main {
-  font-size: 1em;
+  font-size: 0.94em;
   line-height: 1.75;
 }
 
@@ -398,13 +397,12 @@ footer p {
     grid-template-columns: 1fr;
     row-gap: 2px;
     margin-bottom: 28px;
-    font-size: 0.94em;
     line-height: 1.75;
   }
 
   .education-date,
   .education-main {
-    font-size: 1em;
+    font-size: 0.94em;
     line-height: 1.75;
   }
 
